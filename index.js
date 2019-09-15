@@ -90,6 +90,7 @@ function populateTable(){
         }
         let remove = document.createElement("button");
         remove.innerHTML = "X";
+        remove.style = "background-color: #d2ebea; border: none; margin-top: 0.5em;";
         remove.onclick = function() {removeitem(doc.data().item);}
         row.appendChild(remove);
       }

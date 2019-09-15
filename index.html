@@ -4,17 +4,24 @@
 
 </head><body><div id="names"></div>
 
-<nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Project Thor</a>
+<!-- <nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Project Thor</a> 
   
-</nav>
-<div class="container-fluid">
+</nav> -->
+
+<div class="container-fluid" style="background-color: #d2ebea; background-image: linear-gradient(#d2ebea, white);">
+  <div class = "row justify-content-center">
+    <h1 style = "margin-top: 1.2em; margin-bottom: 1em; letter-spacing: 4px;"> FRIDGE FEED</h1>
+    </div>
 	<div class="row form-group mb-2">
 			<input class="form-control form-control-dark mx-2 mt-2 w-25" type="text" placeholder="Search" id="search">
-			<button type="submit" class="btn btn-primary mt-2" id="get">Find Item</button>
-      <button type="submit" class="btn btn-primary mt-2" id="clear">Clear Search</button>
-      <button type="submit" class="btn btn-primary mt-2" id="add">Add Item</button>
+			<button type="submit" class="btn btn-primary mt-2" id="get" style = "margin-right: 0.5em; background-color: #4d7574; border: none;">Find Item</button>
+      <button type="submit" class="btn btn-primary mt-2" id="clear" style = "background-color: #4d7574; border: none;">Clear Search</button>
+      
 	</div>
+  <div class = "row form-group mb-2">
+    <button type="submit" class="btn btn-primary mt-2" id="add" style = "margin-left: 0.5em; background-color: #4d7574; border: none;">Add Item</button>
+    </div>
   <form style="display: none" id="addForm">
     <input id="itemName" placeholder="Name">
     <input id="bestBefore" placeholder="Best Before Date">
@@ -25,9 +32,9 @@
 	<div class="row">
 		<div class="col">
 			<div class="table-responsive">
-				<table class="table	table-hover table-striped px-5 mt-0" id="table">
-				  <thead>
-					<tr>
+				<table class="table	table-hover table-striped px-5 mt-0" id="table" style = "background-color: #f6fbfa;">
+				  <thead style = "background-color: #f6fbfa;">
+					<tr style = "background-color: #f6fbfa;">
 					  <th scope="col">Item</th>
 					  <th scope="col">Best Before</th>
             <th scope="col"> Location</th>
