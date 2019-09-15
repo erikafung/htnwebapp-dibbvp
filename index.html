@@ -1,0 +1,44 @@
+<html><head><script src="bootstrap.bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head><body><div id="names"></div>
+
+<nav class="navbar navbar-dark bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Project Thor</a>
+  
+</nav>
+<div class="container-fluid">
+	<div class="row form-group mb-2">
+			<input class="form-control form-control-dark mx-2 mt-2 w-25" type="text" placeholder="Search" id="search">
+			<button type="submit" class="btn btn-primary mt-2" id="get">Find Item</button>
+      <button type="submit" class="btn btn-primary mt-2" id="clear">Clear Search</button>
+      <button type="submit" class="btn btn-primary mt-2" id="add">Add Item</button>
+	</div>
+  <form style="display: none" id="addForm">
+    <input id="itemName" placeholder="Name">
+    <input id="bestBefore" placeholder="Best Before Date">
+    <input id="location" placeholder="Location">
+    <button type="submit" class="btn btn-primary mt-2" id='finishAdd'> Submit</button>
+  </form>
+
+	<div class="row">
+		<div class="col">
+			<div class="table-responsive">
+				<table class="table	table-hover table-striped px-5 mt-0" id="table">
+				  <thead>
+					<tr>
+					  <th scope="col">Item</th>
+					  <th scope="col">Best Before</th>
+            <th scope="col"> Location</th>
+					  <th scope="col">Date Added</th>
+					</tr>
+				  </thead>
+          <tbody id="body">
+          </tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+</body></html>
